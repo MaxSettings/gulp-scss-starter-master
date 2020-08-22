@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.container {
+    max-width: 830px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.site-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title {
+    font-family: "MyriadPro-Regular";
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+}

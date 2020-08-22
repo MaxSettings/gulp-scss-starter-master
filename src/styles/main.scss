@@ -1,0 +1,55 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "../../node_modules/normalize.css/normalize";
+@import "base/general";
+@import "../blocks/modules";
+.search {
+    padding: 129px 0 120px;
+    &__title {
+        margin-bottom: 113px;
+    }
+    &__inner {
+        margin-bottom: 64px;
+        position: relative;
+    }
+    &__inner:before,
+    &__inner:after {
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 1px;
+        background-color: #ebebeb;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__inner:before {
+        top: 66px;
+    }
+    &__inner:after {
+        bottom: 0;
+    }
+    &__criteria {
+        margin-bottom: 45px;
+    }
+    &__criteria-item {
+        flex: 0 0 25%;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &__criteria-item--big {
+        flex: 0 0 33.75%;
+    }
+    &__criteria-item--small {
+        flex: 0 0 16.25%;
+    }
+    &__results {
+        height: 580px;
+        position: relative;
+        margin-right: -20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
